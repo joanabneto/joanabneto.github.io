@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CV - Joana Neto </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<style> 
+			html, body  {  
+		  	background-color: #A5D6D0;
+		  	font-family:'Josefin Sans', sans-serif;
+ 		  	}
+	 		a:hover  {
+	 			color: white;
+	 			font-weight: bold;
+	 		} 
+	 		.white-link  {
+	 			color: white;
+	 		}
+	 		.dropdown-item {
+	 			background-border-color: #A5D6D0;
+	 			color: grey;  
+	 		}
+	 		.dropdown-menu {	
+	 			background-color: #f0f9f8;
+				color: #737373;
+				border: none;
+				border-radius: 0%;
+	 		}
+	 		.navbar  {
+	 			font-size: 17px;
+	 			background-image: url(images/navbar.png);
+	 			background-position: center top 45px;
+	 			background-repeat: no-repeat;
+	 			background-color: #A5D6D0;
+	 			background-size: 100% 30px;
+	 		}
+	 		.dropdown:hover .dropdown-menu {
+    			display: block;
+		   	 	margin-top: 0;
+		 	}
+		 	.dropdown-toggle::after { 
+            content: none; 
+        	} 
+	 		.work-experience  {
+			 	background-color: #f0f9f8;
+				color: #737373;
+			}
+			.education  {
+				background-color: #f0f9f8;
+				color: #737373;
+			}
+			.volunteering  {
+				background-color: #f0f9f8;
+				color:#737373;
+			}
+			.circle {
+  				font-weight: bold;
+  				width: 50px;
+  				height: 50px;
+  				padding: 15px 15px;
+  				border-radius: 50%;
+  				background-color: #f9c700;
+  				color: #4D4545;
+  				z-index: 2;
+			}
+			.how-it-works.row {
+  				display: flex;
+			}
+			.how-it-works.row .col-2 {
+			  	display: inline-flex;
+			  	align-self: stretch;
+			  	align-items: center;
+			  	justify-content: center;
+			}
+			.how-it-works.row .col-2::after {
+  				content: "";
+  				position: absolute;
+			  	border-left: 3px solid #f9c700;
+			  	z-index: 1;
+			}
+			.how-it-works.row .col-2.bottom::after {
+  				height: 50%;
+				left: 50%;
+			  	top: 50%;
+			}
+			.how-it-works.row .col-2.full::after {
+			  	height: 100%;
+			  	left: calc(50% - 3px);
+			}
+			.how-it-works.row .col-2.full-left::after {
+			  	height: 100%;
+			  	left: 50%;
+			}
+			.how-it-works.row .col-2.top::after {
+			  	height: 50%;
+			  	left: 50%;
+			  	top: 0;
+			}
+			.how-it-works.row .col-2.top-final::after {
+			  	height: 50%;
+			  	left: calc(50% - 3px);
+			  	top: 0;
+			}
+			.timeline div {
+  				padding: 0;
+  				height: 40px;
+			}
+			.timeline hr {
+			  	border-top: 3px solid #f9c700;
+			  	margin: 0;
+			  	top: 17px;
+			  	position: relative;
+			}
+			.timeline .col-2 {
+			  	display: flex;
+			  	overflow: hidden;
+			}
+			.timeline .corner {
+			  	border: 3px solid #f9c700;
+				width: 100%;
+				position: relative;
+				border-radius: 15px;
+			}
+			.timeline .top-right {
+  				left: 50%;
+  				top: -50%;
+			}
+			.timeline .left-bottom {
+  				left: -50%;
+  				top: calc(50% - 3px);
+			}
+			.timeline .top-left {
+  				left: -50%;
+  				top: -50%;
+			}
+			.timeline .right-bottom {
+  				left: 50%;
+  				top: calc(50% - 3px);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--navebar-->
+		<nav class="navbar sticky-top navbar-expand-md">
+			<a class="navbar-brand mb-0 h1" style="color: white" href="home.html">
+				<img src="images/logo.png" alt="Logo" style="width: 50px"; class="d-inline-block">  
+			</a>	 
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+    				<li class="nav-item active d-none d-md-block">
+        				<a class="nav-link white-link" href="index.html">Joana Neto<span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item active">
+        				<a class="nav-link white-link" href="about.html">About Me</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link white-link font-weight-bold" href="cv.html">CV<span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle white-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+        				<div class="dropdown-menu white-link" aria-labelledby="navbarDropdownMenuLink">
+          					<a class="dropdown-item" href="illustration.html">Illustration</a>
+          					<a class="dropdown-item" href="#">Photography</a>  
+          					<a class="dropdown-item " href="#">Recycle</a>
+       			 		</div>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link white-link" href="cv.html">Contacts</a>
+      				</li>
+    			</ul>
+    		</div>
+		</nav>
+		<!--navebar-->
+		
+		<!--page content-->
+		<div class="container" style="max-width: 1242px;">
+			<!--page title-->
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="pb-1 pt-4 font-weight-bold text-center" style="color: white;">CV</h1>
+				</div>
+			</div>
+			<img src="images/div.png" class="img-fluid" style="height: 10px; width: 100%;">
+			<!--page title-->
+
+			<!--general info-->
+			<div class="row">
+				<div class="col-md-3">
+					<h6 class="pt-1 text-center" style="color: white;"><strong><i class="fas fa-map-marker-alt"></i> Nationality</strong> | Portuguese</h6>
+				</div>
+				<div class="col-md-3">
+					<h6 class="pt-1 text-center" style="color: white;"><strong><i class="fas fa-user-alt"></i> Birthdate</strong> | 13/11/1997</h6>
+				</div>
+				<div class="col-md-3">
+					<h6 class="pt-1 text-center" style="color: white;"><strong><i class="fas fa-envelope"></i> Email</strong> | joana.b.neto@gmail.com</h6>
+				</div>
+				<div class="col-md-3">
+					<h6 class="pt-1 text-center" style="color: white;">
+						<strong><i class="fas fa-file-alt"></i> CV</strong> | 
+						<a href="images/joana_neto_cv_en.pdf" target="_blank" style="color: white;">en.pdf</a> / 
+						<a href="images/joana_neto_cv_it.pdf" target="_blank" style="color: white;">it.pdf</a>
+					</h6>
+				</div>
+			</div>
+			<img src="images/div.png" class="img-fluid" style="height: 10px; width: 100%;">
+			<!--general info-->
+
+			<!--info-->
+			<div class="row">
+
+				<!--work experience timeline--> 
+				<div class="col-md-5 pb-5">	
+					<h4 class="pb-3 pt-2 font-weight-bold" style="color: white;"><i class="fas fa-briefcase"></i> Work Experience</h4>
+					    <div class="container work-experience pt-3 pb-3">
+					    	
+					    	<!--first section-->
+						    <div class="row align-items-center how-it-works">
+						      <div class="col-2 text-center bottom">
+						        <div class="circle"><i class="fas fa-cocktail fa-lg"></i></i></div>
+						      </div>
+						      <div class="col-8">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://www.sattrestaurant.com/" target="_blank" style="color: #737373;">WAITRESS | SATT RESTAURANT (ICELANDAIR HOTEL)</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Jun/Aug 2018 & Jul/Sep 2019</h6>
+						        <p>Improved adapting skills, especially thanks to the international environment and event planning.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Iceland</h6>
+						      </div>
+						    </div>
+						    <!--first section-->
+
+						    <!--path between 1-2-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner top-right"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr /> 
+						      </div>
+						      <div class="col-2">
+						        <div class="corner left-bottom"></div>
+						      </div>
+						    </div>
+						    <!--path between 1-2-->
+
+						    <!--second section-->
+						    <div class="row align-items-center justify-content-end how-it-works">
+						      <div class="col-8 text-right">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://www.facebook.com/everiday.pt/" target="_blank" style="color: #737373">WAITRESS/KITCHEN HELPER | EVERIDAY RESTAURANT</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Apr/Jun 2018</h6>
+						        <p>Developed multitasking & pragmatic thinking to meet clients' needs in a short period of time.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						      <div class="col-2 text-center full">
+						        <div class="circle"><i class="fas fa-utensils fa-lg"></i></div>
+						      </div>
+						    </div>
+						    <!--second section-->
+
+						    <!--path between 2-3-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner right-bottom"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner top-left"></div>
+						      </div>
+						    </div>
+						    <!--path between 2-3-->
+
+						    <!--third section-->
+						    <div class="row align-items-center how-it-works">
+						      <div class="col-2 text-center full-left">
+						        <div class="circle"><i class="fas fa-mug-hot fa-lg"></i></div>
+						      </div>
+						      <div class="col-8">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://www.facebook.com/VelociteCafe/" target="_blank" style="color: #737373">WAITRESS | VELOCITÈ CAFÉ</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Oct/Nov 2017</h6>
+						        <p>Met & developed the low environmental impact goals of the project.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						    </div>
+						    <!--third section-->
+
+						    <!--path between 3-4-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner top-right"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner left-bottom"></div>
+						      </div>
+						    </div>
+						    <!--path between 3-4-->
+
+						    <!--forth section-->
+						    <div class="row align-items-center justify-content-end how-it-works">
+						      <div class="col-8 text-right">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://grandeexhibitions.com/van-gogh-alive/" target="_blank" style="color: #737373">EXHIBITION ASSISTANT | VAN GOGH ALIVE EXPERIENCE</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Jul & Sep 2017</h6>
+						        <p>Matured customer approach, while deepening my personal knowledge and interest in art.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						      <div class="col-2 text-center full">
+						        <div class="circle"><i class="fas fa-paint-brush fa-lg"></i></div>
+						      </div>
+						    </div>
+						    <!--forth section-->
+
+						    <!--path between 4-5-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner right-bottom"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner top-left"></div>
+						      </div>
+						    </div>
+						    <!--path between 4-5-->
+
+						    <!--fifth section-->
+						    <div class="row align-items-center how-it-works">
+						      <div class="col-2 text-center full-left">
+						        <div class="circle" style="padding: 15px 13px;"><i class="fas fa-store fa-lg"></i></div>
+						      </div>
+						      <div class="col-8">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://fialisboa.fil.pt/?lang=en" target="_blank" style="color: #737373">SALES ASSISTANT | ARTS & CRAFTS MARKET</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Jun 2016 & Jun 2017</h6>
+						        <p>Fostered a healthy work atmosphere and a professional customer approach.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						    </div>
+						    <!--fifth section-->
+
+						    <!--path between 5-6-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner top-right"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner left-bottom"></div>
+						      </div>
+						    </div>
+						    <!--path between 5-6-->
+
+						    <!--sixth section-->
+						    <div class="row align-items-center justify-content-end how-it-works">
+						      <div class="col-8 text-right">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://www.aevf.pt/index.php/ebt1" target="_blank" style="color: #737373">CHILDCARE WORKER | CAF</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Apr 2016 (Easter Holidays)</h6>
+						        <p>Developed creative thinking & leadership skills, reaching out to the different needs of the children.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						      <div class="col-2 text-center full">
+						        <div class="circle" style="padding: 9px 10px;"><i class="fas fa-child fa-2x"></i></div>
+						      </div>
+						    </div>
+						    <!--sixth section-->
+
+						    <!--path between 6-7-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner right-bottom"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner top-left"></div>
+						      </div>
+						    </div>
+						    <!--path between 6-7-->
+
+						    <!--seventh section-->
+						    <div class="row align-items-center how-it-works">
+						      <div class="col-2 text-center full-left">
+						        <div class="circle" style="padding: 16px 14px"><i class="fas fa-tags fa-lg"></i></div>
+						      </div>
+						      <div class="col-8">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://pt.flyingtiger.com/pt-PT" target="_blank" style="color: #737373">SALES ASSISTANT | FLYING TIGER</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Nov 2016/Apr 2017</h6>
+						        <p>Strove for efficiency in customer service & on the management of the store.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						    </div>	
+						    <!--seventh section-->
+
+						    <!--path between 7-8-->
+						    <div class="row timeline">
+						      <div class="col-2">
+						        <div class="corner top-right"></div>
+						      </div>
+						      <div class="col-8">
+						        <hr />
+						      </div>
+						      <div class="col-2">
+						        <div class="corner left-bottom"></div>
+						      </div>
+						    </div>
+						    <!--path between 7-8-->
+
+						    <!--eighth section-->
+						    <div class="row align-items-center justify-content-end how-it-works">
+						      <div class="col-8 text-right">
+						        <h6 class="font-weight-bold">
+						       		<a href="https://www.gfk.com/" target="_blank" style="color: #737373">CALL CENTER OPERATOR | GFK METRIS</a>
+						       	</h6>
+						        <h6 class="font-weight-bold">Sep/Dec 2015</h6>
+						        <p>Improved oral communication & focus abilities.</p>
+						        <h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						      </div>
+						      <div class="col-2 text-center top-final">
+						        <div class="circle" style="padding: 9px 6px;"><i class="fas fa-headset fa-2x"></i></div>
+						      </div>
+						    </div>
+						    <!--eighth section-->
+						</div>
+				</div>
+				<!--work experience timeline-->
+
+				<!--volunteer + international programmes-->
+				<div class="col-md-4 pb-3">
+					<h4 class="pb-3 pt-2 font-weight-bold" style="color: white;"><i class="fas fa-globe-africa"></i> International Programs</h4>
+						<div class="container education pt-3 pb-2">
+							<h6 class="font-weight-bold"> 
+								<a href="https://www.unibo.it/it" target="_blank" style="color: #737373">ERASMUS | UNIVERSITY OF BOLOGNA | 2018/2019</a>
+							</h6>
+								<p class="text-justify">Last year of my bachelor in International Relations. Gave me a new perspective on my studies & posed both an academic & personal challenge.</p>
+								<p class="font-weight-bold pb-2"><i class="fas fa-map-marker-alt"></i> Italy</p>
+							<hr>
+							<h6 class="pt-2 font-weight-bold"> 
+								<a href="https://www.vidaedu.com/happy-global-people/joana-na-islandia/" target="_blank" style="color: #737373">AU PAIR | JAN/JUN 2016</a>
+							</h6>
+								<p class="text-justify">Decided to take a Gap Year after high school. Helped me gain a sense of independence & responsibility, while reflecting on my near future choices.</p>
+								<p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Iceland</p>
+						</div>
+					<h4 class="pb-3 pt-3 font-weight-bold" style="color: white;"><i class="fas fa-hands-helping"></i> Volunteer Work</h4>
+						<div class="container volunteering pt-3 pb-2">
+							<h6 class="font-weight-bold">ERCI | LESVOS REFUGEE CAMPS | AUG 2017</h6>
+								<p class="text-justify">Worked in the Kara Tepe Refugee Camp & in coastal surveillance</p> 
+								<p class="text-justify">Improved problem solving & team work skills</p>
+								<h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Greece</h6>
+							<hr>
+							<h6 class="font-weight-bold">SCOUTS ASSOCIATION | 2011/2017</h6>
+								<p class="text-justify">Team leader for 1 year</p>
+								<p class="text-justify">Running fundraising events</p>
+								<p class="text-justify">Functions in logistics & finance</p>
+								<p class="text-justify">Creation of communication products (logos, flyers, presentations)</p>
+								<h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+							<hr>
+							<h6 class="font-weight-bold">NURSING HOME | OCT/DEC 2015</h6>
+								<p class="text-justify">Development of stimulating activities for the residents</p>
+								<p class="text-justify">Organization of events for both the residents and their families</p>
+								<h6 class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</h6>
+						</div>
+				</div>
+				<!--volunteer + international programmes-->
+					
+				<!--education + languages + countries lived in-->
+				<div class="col-md-3">
+					<h4 class="pb-3 pt-2 font-weight-bold" style="color: white;"><i class="fas fa-graduation-cap"></i> Education</h4>
+						<div class="container education pt-2 pb-2">
+							<h6 class="pt-2 font-weight-bold"> 
+								<a href="https://www.iscsp.ulisboa.pt/pt" target="_blank" style="color: #737373">INSTITUTE OF SOCIAL & POLITICAL SCIENCES | 2016/2019</a>
+							</h6>
+								<p>Bachelor in International Relations</p>
+								<p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Portugal</p>
+						</div>
+					<h4 class="pb-3 pt-3 font-weight-bold" style="color: white;"><i class="fas fa-comments"></i> Languages</h4>
+						<div class="container education pt-2 pb-2">
+							<h6 class="font-weight-bold">Portuguese</h6>
+								<p><i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i></p>
+							<h6 class="font-weight-bold">English</h6>
+								<p><i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i></p>
+							<h6 class="font-weight-bold">Italian</h6>
+								<p><i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="far fa-circle"></i></p>
+							<h6 class="font-weight-bold">French</h6>
+								<p><i class="fas fa-circle"></i>	<i class="fas fa-circle"></i>	<i class="far fa-circle"></i>	<i class="far fa-circle"></i>	<i class="far fa-circle"></i></p>
+						</div>
+					<h4 class="pb-3 pt-3 font-weight-bold" style="color: white;"><i class="fas fa-map-marked-alt"></i> Countries Where I've Lived</h4>
+						<div class="container text-center pt-2 pb-2" style="color: white;">
+							<div class="row">
+								<div class="col-12 pb-4">
+									<img src="images/portugal.png" style="height: 150px;">
+									<h6 class="font-weight-bold">
+										<i class="fas fa-map-marker-alt"></i> Portugal
+									</h6>
+								</div>
+								<div class="col-12 pb-4">
+									<img src="images/iceland.png" style="height: 100px;">
+									<h6 class="font-weight-bold">
+										<i class="fas fa-map-marker-alt"></i> Iceland
+									</h6>									
+								</div>
+								<div class="col-12 pb-4">
+									<img src="images/Greece.png" style="height: 150px;">
+									<h6 class="font-weight-bold">
+										<i class="fas fa-map-marker-alt"></i> Greece
+									</h6>
+								</div>
+								<div class="col-12 pb-4">
+									<img src="images/italy.png" style="height: 150px;">
+									<h6 class="font-weight-bold">
+										<i class="fas fa-map-marker-alt"></i> Italy
+									</h6>									
+								</div>
+							</div>				
+						</div>					
+				</div>
+				<!--education + languages + countries lived in-->
+			</div>
+			<!--info-->
+		</div>
+		<!--page_content-->
+
+	</body>
+
+</html>
