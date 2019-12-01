@@ -5,7 +5,7 @@
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About Me - Joana Neto</title>
+		<title>Art Combo - Joana Neto</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 		<style> 
 			html, body  {  
 		  	background-color: #A5D6D0;
-		  	font-family: 'Josefin Sans', sans-serif;
+		  	font-family: "Josefin Sans";
  		  	}
 	 		a:hover  {
 	 			color: white;
@@ -51,6 +51,9 @@
 		 	.dropdown-toggle::after { 
             content: none; 
         	} 
+        	.illustration-row img {
+        		padding-bottom: 30px;
+        	}
         	.navbar-dark .navbar-nav .nav-link {
 			    color: white;
 			}
@@ -63,7 +66,7 @@
 		<!--navebar-->
 		<nav class="navbar navbar-dark sticky-top navbar-expand-md" style="color: white; background-color: #A5D6D0;">
 			<a class="navbar-brand mb-0 h1" style="color:white" href="index.html">
-				<img src="images/logo.png" alt="Logo" style="width: 50px;" class="d-inline-block">
+				<img src="images/logo.png" alt="Logo" style="width: 50px;" class="d-inline-block">	
 			</a>	 
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     			<span class="navbar-toggler-icon"></span>
@@ -74,15 +77,15 @@
         				<a class="nav-link white-link d-none d-md-block" href="index.html">Joana Neto</a>
       				</li>
       				<li class="nav-item active">
-        				<a class="nav-link white-link font-weight-bold" href="about.html">About Me<span class="sr-only">(current)</span></a>
+        				<a class="nav-link white-link" href="about.html">About Me</a>
       				</li>
       				<li class="nav-item active">
         				<a class="nav-link white-link" href="cv.html">CV</a>
       				</li>
       				<li class="nav-item dropdown">
-        				<a class="nav-link dropdown-toggle white-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+        				<a class="nav-link dropdown-toggle white-link  font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
         				<div class="dropdown-menu white-link" aria-labelledby="navbarDropdownMenuLink">
-          					<a class="dropdown-item" href="illustration.html">Illustration</a>
+          					<a class="dropdown-item" href="illustration.html">Illustration<span class="sr-only">(current)</span></a>
           					<!-- <a class="dropdown-item" href="#">Photography</a>    	
           					<a class="dropdown-item " href="#">Recycle</a> -->
        			 		</div>
@@ -100,35 +103,25 @@
 			<!--page title-->
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="pb-1 pt-4 font-weight-bold text-center" style="color: white;">About Me</h1>
+					<h1 class="pb-1 pt-4 font-weight-bold" style="color: white;">Art Combo</h1>
+					<p style="color: white;">This is a funny project I have with my boyfriend. He chooses the scenario where he wants to take a picture and I draw it. In the end, we see how different our views were of the same place.</p>
 				</div>
 			</div>
 			<img src="images/div.png" class="img-fluid" style="height: 10px; width: 100%;">
 			<!--page title-->
 
-			<!--info me-->
-			<div class="row">
-				<!--image me-->
-				<div class="col-md-5">
-					<div class="text-center">
-						<img src="images/me.png" class="img-fluid" style="border-radius: 50%; height: 450px; padding-top: 20px;	padding-bottom: 30px">
-					</div>
+			<!--illustrations index-->
+			<div class="illustration-row row pt-3">
+				<div class="col-md-6">
+					<img src="images/illustrations/a.png" class="img-fluid" style="width: 100%;">
 				</div>
-				<!--image me-->
-
-				<!--about me-->
-				<div class="col-md-7 pt-3">
-					<div class="text-center">
-						<img src="images/about_me.png" class="img-fluid" style="height: 210px;">
-						<img src="images/about_me_2.png" class="img-fluid" style="height: 210px; padding-bottom: 20px;">
-					</div>									
+				<div class="col-md-6">
+					<img src="images/illustrations/b.png" class="img-fluid" style="width: 100%;">
 				</div>
-				<!--about me-->
 			</div>
-			<!--info me-->	
-		</div>
-		<!--page content-->
+			<!--illustrations index-->
 
+		</div>
 	</body>
 
 </html>

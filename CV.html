@@ -20,6 +20,9 @@
 	 			color: white;
 	 			font-weight: bold;
 	 		} 
+	 		.dropdown-item:active {
+	 			background-color: #d9d9d9;
+	 		}
 	 		.white-link  {
 	 			color: white;
 	 		}
@@ -144,13 +147,16 @@
   				left: 50%;
   				top: calc(50% - 3px);
 			}
+			.navbar-dark .navbar-nav .nav-link {
+			    color: white;
+			}
 		</style>
 	</head>
 
 	<body>
 
 		<!--navebar-->
-		<nav class="navbar sticky-top navbar-expand-md">
+		<nav class="navbar navbar-dark sticky-top navbar-expand-md">
 			<a class="navbar-brand mb-0 h1" style="color: white" href="index.html">
 				<img src="images/logo.png" alt="Logo" style="width: 50px"; class="d-inline-block">  
 			</a>	 

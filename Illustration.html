@@ -20,6 +20,9 @@
 	 			color: white;
 	 			font-weight: bold;
 	 		} 
+	 		.dropdown-item:active {
+	 			background-color: #d9d9d9;
+	 		}
 	 		.white-link  {
 	 			color: white;
 	 		}
@@ -54,33 +57,22 @@
         	.container-illustration  {
         		position: relative;
         		width: 100%;
-        		background-color: #f0f9f8;
+        		background-color: black;
         	}
         	.image-illustration  {
         		display: block;
         		width: 100%;
         		transition: .5s ease;
         	}
-        	.overlay  {
-        		position: absolute;
-        		top: 0;
-        		bottom: 0;
-        		left: 0;
-        		right: 0;
-        		height: 88%;
-        		width: 100%;
-        		opacity: 0;
-        		transition: .5s ease;
-        		background-color: #f0f9f8;
-        	}
-        	.container-illustration:hover .image-illustration  {
+           	.container-illustration:hover .image-illustration  {
         		opacity: 0.6;
         	}
         	.container-illustration:hover .text-illustration  {
         		opacity: 1;
         	}
         	.text-illustration {
-        		color: #737373;
+        		text-shadow: 5px 5px 15px black;
+        		color: white;
         		font-size: 250%;
         		position: absolute;
         		top: 50%;
@@ -92,6 +84,9 @@
  				opacity: 0;
  				transition: .5s ease;
         	}
+        	.navbar-dark .navbar-nav .nav-link {
+			    color: white;
+			}
 		</style>
 
 	</head>
@@ -99,7 +94,7 @@
 	<body>
 
 		<!--navebar-->
-		<nav class="navbar sticky-top navbar-expand-md" style="color: white; background-color: #A5D6D0;">
+		<nav class="navbar navbar-dark sticky-top navbar-expand-md" style="color: white; background-color: #A5D6D0;">
 			<a class="navbar-brand mb-0 h1" style="color:white" href="index.html">
 				<img src="images/logo.png" alt="Logo" style="width: 50px;" class="d-inline-block">	
 			</a>	 
@@ -138,7 +133,8 @@
 			<!--page title-->
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="pb-1 pt-4 font-weight-bold text-center" style="color: white;">Illustration</h1>
+					<h1 class="pb-1 pt-4 font-weight-bold" style="color: white;">Illustration</h1>
+					<p style="color: white;">It's something I do quite often, drawing. I've studied arts in high school and I have to say that those were very good times, where my views changed a lot and also my way of expression. Whenever I can and feel like it, I draw and these are some of the samples.</p>
 				</div>
 			</div>
 			<img src="images/div.png" class="img-fluid" style="height: 10px; width: 100%;">
@@ -151,6 +147,14 @@
 						<a href="agenda_2019.html">
 							<img src="images/illustrations/1.png" class="image-illustration">
 							<div class="text-illustration">Agenda 2019</div>
+						</a>
+					</div>
+				</div>								
+				<div class="col-md-6">
+					<div class="container-illustration">
+						<a href="art_combo.html">
+							<img src="images/illustrations/a.png" class="image-illustration">
+							<div class="text-illustration">Art Combo</div>
 						</a>
 					</div>
 				</div>								
