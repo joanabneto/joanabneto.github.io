@@ -1,0 +1,6 @@
+{% for post in site.posts reversed %}	
+	<div class="col-md-6">
+    	<a href="{{ post.url }}"><img class="post-images" src="{{ post.images }}"/></a>
+	   	<h4><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h4>
+	</div>	
+{% endfor %}

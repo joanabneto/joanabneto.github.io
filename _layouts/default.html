@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		{% include menu.html %}
+		{{ content }}
+		<script src="/assets/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.min.js"></script>
+		<script>
+		$( "button" ).click(function() {
+		  $( "ul" ).toggle();
+		});
+		</script>
+		<script>
+		    lightbox.option({
+		      'alwaysShowNavOnTouchDevices': true,
+		      'maxWidth': 1000,
+		      'positionFromTop': 140,
+		      'albumLabel': "%1 of %2"
+		    })
+		</script>
+	</body>
+</html>

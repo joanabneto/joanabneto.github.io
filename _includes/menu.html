@@ -1,0 +1,43 @@
+<div class="col-md-12 text-center" style="padding-top: 20px;">
+		<a href="/home/"><img src="/assets/images/name.png" class="img-name-mobile" alt=""></a>
+		<!--mobile menu-->
+
+		<div id="mobile_menu">
+		  	<button class="btn menu-mobile-button" type="button">+
+		  	</button>
+		  	<ul class="" style="display: none;">
+				<li {% if page.url == "/about/" %} class="current-page" {% endif %}>
+				  <a href="/about/">about</a>
+				</li>
+				<li {% if page.url contains "/illustration/" %} class="current-page" {% endif %}>
+				  <a href="/illustration/">illustration</a>
+				</li>
+				<li {% if page.url == "/sketches/" %} class="current-page" {% endif %}>
+				  <a href="/sketches/">sketches</a>
+				</li>
+				<li {% if page.url == "/contact/" %} class="current-page" {% endif %}>
+				  <a href="/contact/">contact</a>
+				</li> 
+			</ul>
+		</div>
+		<!--mobile menu-->
+
+		<ul id="pc_menu" class="nav justify-content-center">
+			<li {% if page.url == "/about/" %} class="current-page" {% endif %} class="nav-item">
+			  <a class="nav-link" href="/about/">about</a>
+			</li>
+			<li {% if page.url contains "/illustration/" %} class="current-page" {% endif %} class="nav-item">
+			  <a class="nav-link" href="/illustration/">illustration</a>
+			</li>
+			<li class="nav-item">
+			  <a href="/home/"><img src="/assets/images/name.png" class="img-name" alt=""></a>
+			</li>
+			<li {% if page.url == "/sketches/" %} class="current-page" {% endif %} class="nav-item">
+			  <a class="nav-link" href="/sketches/">sketches</a>
+			</li>
+			<li {% if page.url == "/contact/" %} class="current-page" {% endif %} class="nav-item">
+			  <a class="nav-link" href="/contact/">contact</a>
+			</li> 
+		</ul>
+</div>
+
