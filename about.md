@@ -7,12 +7,10 @@ images: "/assets/images/illustrations/about.jpg"
 ---
 ### Hi!
 
-I'm Joana, an amateur illustrator and noob at Web Development that enjoys trying out new things.
+I'm Joana, an amateur illustrator and a noob at Web Development that enjoys trying out new things.
 
-I'm a recent graduate in International Relation, but I like to combine different areas of interest, so politics, illustration, photography... 
+I've graduated in International Relations and in my free time I like to combine different areas of interest, from politics to illustration and beyond! 
 
-Right now, I just engaged in a new adventure: learning Web Development; and so this website is the result of my first experience codding.
-
-Here you can find some of my illustration work and hopefully in the future, more projects that I got myself into!
+Here you can find some of my illustration work and hopefully in the future, more projects that I got myself into.
 
 Hope you like it!
